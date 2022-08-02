@@ -1,6 +1,6 @@
 package com.annotation.annotation.controller;
 
-import com.annotation.annotation.service.Encryption;
+import com.annotation.annotation.Service.Encryption;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;

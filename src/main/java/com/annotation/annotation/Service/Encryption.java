@@ -1,4 +1,4 @@
-package com.annotation.annotation.service;
+package com.annotation.annotation.Service;
 
 public interface Encryption {
 

@@ -1,12 +1,12 @@
-package com.annotation.annotation.service.serviceImpl;
+package com.annotation.annotation.Service.ServiceImpl;
 
-import com.annotation.annotation.service.Encryption;
+import com.annotation.annotation.Service.Encryption;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
-@Primary
+@Primary // primary annotation is used to specify the precedence of bean injection to the compiler
 @Qualifier("En1")
 public class En1 implements Encryption {
 
