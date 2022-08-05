@@ -1,6 +1,6 @@
-package com.annotation.annotation.Service.ServiceImpl;
+package com.annotation.Service.ServiceImpl;
 
-import com.annotation.annotation.Service.Encryption;
+import com.annotation.Service.Encryption;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

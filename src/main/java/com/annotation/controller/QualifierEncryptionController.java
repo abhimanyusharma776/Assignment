@@ -1,19 +1,19 @@
-package com.annotation.annotation.controller;
+package com.annotation.controller;
 
-import com.annotation.annotation.Service.Encryption;
+import com.annotation.Service.Encryption;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/primary")
-public class PrimaryEncryptionController {
-
+@RequestMapping("/qualifier")
+public class QualifierEncryptionController {
     private final Encryption encryption;
-
     @Autowired
-    public PrimaryEncryptionController(Encryption encryption) {
+    public QualifierEncryptionController(@Qualifier("En2") Encryption encryption) // @qualifier annotation specifies the bean to be injected for this call
+    {
         this.encryption = encryption;
     }
 
